@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+
+/*pagina principal:titulo y fondo*/
+.pagina-principal{
+    height: 96vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.67)) ,url(../assets/fondo.jpg);
+    background-size: cover;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina-principal h1{
+    font-size: 3.4rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.pagina-principal p{
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 600px;
+}
+
+.pagina-principal .pagina-principal__boton{
+    font-size: 1.6rem;
+}
+.pagina-principal .pagina-principal__boton>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/*bootstraps de navbar-modificado en css*/
+.navbar{
+    
+}
+
+.navbar-brand{
+    color: aliceblue;
+}
+
+.navbar>.container-fluid>.navbar-toggler{
+    background-color: aliceblue;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.bg-body-tertiary{
+    background-color: rgb(5, 5, 5) !important;
+    color: aliceblue; 
+}
+
+.navbar-nav{
+    --bs-nav-link-color: aliceblue;
+    --bs-nav-link-hover-color: aliceblue;
+    --bs-nav-link-disabled-color: aliceblue;
+    
+}
+
+.navbar-nav:hover{
+    --bs-nav-link-color: rgba(240, 248, 255, 0.642);
+    
+}
+
+.navbar-nav .nav-link.active{
+    color: aliceblue;
+}
+
+
+
+
+/*seccion de catalogo de series*/
+.catalogo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+}
+.catalogo-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*modificando css de bootstraps tajetas*/
+.catalogo-container>.card{
+
+}
+
+.catalogo-container>.card>img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    
+}
+.catalogo-container>.card>.card-body{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogo-container>.card>.card-body>.btn{
+    background-color: black;
+    border: none;
+    
+}
+.catalogo-container>.card>.card-body>.btn:hover{
+    background-color: rgba(0, 0, 0, 0.497);
+    color: black;
+    
+}
+
+
+
+/*Pages de suscripcion y formulario */
+.suscripcion{
+    padding: 20px;
+    min-height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.529),rgba(0, 0, 0, 0.671)),url(../assets/fondo-2.jpg);
+}
+/* modificando css del formulario creado con bootstraps*/
+.suscripcion>form{
+    
+    max-width: 600px;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 20px;
+    
+}
+
+.suscripcion>form>h4{
+    margin-bottom: 30px;
+}
+
+.suscripcion>form>.mb-3>.form-text{
+    color: aliceblue;
+}
+.suscripcion>form>.mb-3>input:hover{
+    background-color: rgb(181, 181, 181);
+}
+
+.suscripcion>form>.btn-primary{
+    background-color: black;
+    border: solid 1px rgb(255, 255, 255);
+}
+.suscripcion>form>.btn-primary:hover{
+    background-color: rgba(238, 238, 238, 0.727);
+}
+
+/*footer*/
+.footer{
+    color: rgb(94, 94, 94);
+}
+
+
+@media (min-width: 992px) {
+    .navbar-nav{
+        gap: 30px;
+    }
+    .navbar-expand-lg {
+
+    }
+}
+
