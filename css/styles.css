@@ -82,7 +82,7 @@ body{
 
 
 
-/*seccion de catalogo de series*/
+/*seccion de catalogo de series--------------------seccion de catalogo de series*/
 .catalogo{
     display: flex;
     flex-direction: column;
@@ -126,7 +126,7 @@ body{
 
 
 
-/*Pages de suscripcion y formulario */
+/*Pages de suscripcion y formulario ----------------------------Pages de suscripcion y formulario */
 .suscripcion{
     padding: 20px;
     min-height: 90vh;
@@ -161,30 +161,46 @@ body{
     background-color: rgba(238, 238, 238, 0.727);
 }
 
-/*Seccion Multimedia */
+
+
+
+/*Seccion Multimedia----------------------Seccion multimedia */
+
+.multimedia{
+    gap: 2rem;
+}
 
 .multimedia>.multimedia__trailer{
+    
+    max-width: 900px;
+    width: 100%;
     
 }
 
 .multimedia>.multimedia__trailer>video{
-    max-width: 100%;
+    width: 100%;
+    
 }
-
+/*modificando el bootstrap imagen responsive*/
 .multimedia>.multimedia__relacionado>.multimedia__relacionado__img>img{
     height:150px ;
+    width: 100%;
 }
 
 .multimedia>.multimedia__relacionado{
-   
+    max-width: 300px;
 }
+
+
+
+
 /*footer*/
 .footer{
     color: rgb(94, 94, 94);
 }
 
 
-
+/* modificando media queires del nav-bar de bootstraps (gap) */
 
 @media (min-width: 992px) {
     .navbar-nav{
@@ -194,9 +210,11 @@ body{
 
     }
 }
-
+/*modificando el titulo del html principal(index) para responsive*/
 @media (max-width: 380px){
     .pagina-principal h1{
         font-size: 2rem;
     }
 }
+
+/* NOTA: Para ver el html "Multimedia" presionar en Ver ahora en el html "Catalogo" */
