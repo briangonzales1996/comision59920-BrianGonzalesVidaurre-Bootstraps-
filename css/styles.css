@@ -9,7 +9,7 @@ body{
 
 /*pagina principal:titulo y fondo*/
 .pagina-principal{
-    height: 96vh;
+    height: 95vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.653),rgba(0, 0, 0, 0.67)) ,url(../assets/fondo.jpg);
     background-size: cover;
     color: aliceblue;
@@ -161,10 +161,29 @@ body{
     background-color: rgba(238, 238, 238, 0.727);
 }
 
+/*Seccion Multimedia */
+
+.multimedia>.multimedia__trailer{
+    
+}
+
+.multimedia>.multimedia__trailer>video{
+    max-width: 100%;
+}
+
+.multimedia>.multimedia__relacionado>.multimedia__relacionado__img>img{
+    height:150px ;
+}
+
+.multimedia>.multimedia__relacionado{
+   
+}
 /*footer*/
 .footer{
     color: rgb(94, 94, 94);
 }
+
+
 
 
 @media (min-width: 992px) {
@@ -176,3 +195,8 @@ body{
     }
 }
 
+@media (max-width: 380px){
+    .pagina-principal h1{
+        font-size: 2rem;
+    }
+}
